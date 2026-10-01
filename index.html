@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>⚡The Tesla Coil | Science Exhibition⚡</title>
+
+    <style>
+
+        /* ---------- BASIC SETTINGS ---------- */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101820;
+            color: #dcecff;
+            line-height: 1.7;
+        }
+
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(
+                135deg,
+                #101820,
+                #16283a,
+                #071b2d
+            );
+
+            border-bottom: 2px solid #00bfff;
+
+            box-shadow:
+                0 0 25px #006eff;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #00ffff;
+
+            text-shadow:
+                0 0 10px #00ffff,
+                0 0 25px #008cff,
+                0 0 45px #0066ff;
+        }
+
+        header p {
+            margin-top: 15px;
+            color: #9edfff;
+            font-size: 20px;
+        }
+
+
+        /* ---------- NAVIGATION ---------- */
+
+        nav {
+            background: #0b121a;
+            padding: 15px;
+            text-align: center;
+
+            position: sticky;
+            top: 0;
+
+            border-bottom: 1px solid #174a70;
+        }
+
+        nav a {
+            color: #00d9ff;
+            text-decoration: none;
+
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+
+            text-shadow:
+                0 0 10px #00ffff;
+        }
+
+
+        /* ---------- MAIN CONTENT ---------- */
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+
+        /* ---------- IMAGE ---------- */
+
+        .hero-image {
+            text-align: center;
+            margin: 30px 0 50px;
+        }
+
+        .hero-image img {
+            width: 90%;
+            max-width: 850px;
+
+            border-radius: 15px;
+
+            border: 2px solid #00bfff;
+
+            box-shadow:
+                0 0 20px #0077ff,
+                0 0 50px #003cff;
+        }
+
+
+        /* ---------- SECTIONS ---------- */
+
+        section {
+            background: #172330;
+
+            margin: 30px 0;
+            padding: 30px;
+
+            border-radius: 15px;
+
+            border-left: 4px solid #00bfff;
+
+            box-shadow:
+                0 0 15px rgba(0, 150, 255, 0.25);
+        }
+
+        section h2 {
+            color: #00ffff;
+
+            margin-bottom: 15px;
+
+            font-size: 30px;
+
+            text-shadow:
+                0 0 10px #008cff;
+        }
+
+        section p {
+            color: #d7e9f7;
+            font-size: 17px;
+        }
+
+
+        /* ---------- CARDS ---------- */
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 250px;
+
+            background: #101a24;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            border: 1px solid #145b86;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+
+            border-color: #00ffff;
+
+            box-shadow:
+                0 0 20px #006eff;
+        }
+
+        .card h3 {
+            color: #00bfff;
+            margin-bottom: 10px;
+        }
+
+
+        /* ---------- HIGHLIGHT ---------- */
+
+        .highlight {
+            color: #00ffff;
+            font-weight: bold;
+        }
+
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            text-align: center;
+
+            padding: 30px;
+
+            background: #080e14;
+
+            color: #7fa6bd;
+
+            border-top: 1px solid #174a70;
+        }
+
+        footer strong {
+            color: #00ffff;
+        }
+
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>⚡ SPARKS AND SPIRITS : THE TESLA COIL ⚡</h1>
+
+        <p>
+            The Power of Resonance and High Voltage: Yash Vardhan Singh 🤝 Saksham Prakash
+        </p>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#working">Working</a>
+
+        <a href="#components">Components</a>
+
+        <a href="#applications">Applications</a>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- IMAGE -->
+
+        <div class="hero-image">
+
+            <!--
+            CHANGE "teslacoil.jpg"
+            TO YOUR IMAGE FILE NAME
+            -->
+
+            <img src="c:\Users\DELL\Downloads\tesla-coil-iiii.jpg"
+                 alt="Tesla Coil">
+
+        </div>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <h2>⚡ About the Tesla Coil</h2>
+
+            <p>
+
+                <span class="highlight">
+                   Welcome to an exploration of one of the most fascinating demonstrations of high-voltage electricity — the Tesla Coil.
+
+Named after the legendary inventor Nikola Tesla, the Tesla Coil is a remarkable electrical device that uses the principles of electromagnetic induction and resonance to generate extremely high voltages at high frequencies. The spectacular electrical arcs it produces are not just visually impressive; they are a direct demonstration of how electrical energy can be transferred and amplified through carefully tuned circuits.
+
+
+In this project, I Yash Vardhan Singh and my companion Saksham Prakash explore the science behind the Tesla Coil, from its fundamental components and working principle to the physics of resonance, high-frequency current, and electromagnetic fields.
+
+Step into the world of high-voltage science — where invisible electromagnetic energy becomes visible.
+                    
+                </span>
+
+                
+
+            </p>
+
+        </section>
+
+
+        <!-- WORKING -->
+
+        <section id="working">
+
+            <h2>🔬 How Does It Work?</h2>
+
+            <p>
+                <span class="highlight">
+
+                A Tesla Coil works on two key principles of physics: electromagnetic induction and electrical resonance. Instead of simply increasing voltage like an ordinary transformer, it uses resonance to transfer energy efficiently between two specially tuned coils.<br>
+
+01 — Energy Enters the Primary Circuit
+The process begins when electrical energy is supplied to the primary circuit. This circuit contains the primary coil and a capacitor or electronic driver that allows energy to oscillate at a particular frequency.<br><br>
+
+02 — The Primary Coil Creates a Magnetic Field
+As alternating current flows through the primary coil, it produces a changing magnetic field around the coil. This rapidly changing field is the mechanism that allows energy to be transferred to the secondary coil.<br><br>
+
+03 — Resonance Amplifies the Effect
+The primary and secondary circuits are designed to have similar resonant frequencies. When they are properly tuned, energy is transferred between them efficiently through electromagnetic coupling.
+
+This phenomenon is called resonance. It is similar to pushing a swing at exactly the right time — small, repeated inputs can produce a much larger oscillation.<br><br>
+
+04 — Voltage Rises in the Secondary Coil
+The secondary coil contains many more turns of wire than the primary coil. As energy builds up in the secondary circuit, the electrical potential can reach very high voltages.
+
+The voltage is concentrated near the top of the secondary coil, where a top-load or toroidal structure is often used to control the electric field and help the system resonate at its intended frequency.<br><br>
+
+05 — The Electric Field Becomes Visible
+When the electric field around the top of the coil becomes sufficiently strong, it can ionize the surrounding air. The ionized air becomes electrically conductive, producing the characteristic glowing streamers and sparks associated with a Tesla Coil.
+
+            </span>
+        </p>
+
+        </section>
+
+
+        <!-- COMPONENTS -->
+
+        <section id="components">
+
+            <h2>⚙️ Main Components</h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3> 🌀 Primary Coil</h3>
+
+                    <p>
+                        The primary coil is made from a relatively small number of turns of thick conductive wire or tubing. It carries a large oscillating current and creates the changing magnetic field that transfers energy to the secondary coil.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>🧲Secondary Coil</h3>
+
+                    <p>
+                        The secondary coil consists of many turns of comparatively thin insulated wire. Through electromagnetic coupling and resonance, energy is transferred from the primary circuit into the secondary circuit, producing a very high voltage.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>⚡Capacitor</h3>
+
+                    <p>
+                        The capacitor stores electrical energy and releases it into the primary circuit. Together with the primary coil, it forms an LC resonant circuit.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>🟠 Top Load</h3>
+
+                    <p>
+                        The top load, often shaped like a toroid or sphere, is connected to the top of the secondary coil. It stores electrical charge, influences the resonant frequency, and helps control the electric field around the coil.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+
+        <section>
+
+            <h2>⚡ Working Process</h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3>01 — 🔋Energy Input</h3>
+
+                    <p>
+                        Electrical energy is supplied to the Tesla Coil through its power supply and driver circuit. The driver delivers energy to the primary circuit in a controlled, rapidly changing form.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>02 —  🌀Oscillation</h3>
+
+                    <p>
+                        The primary coil and capacitor form an oscillating electrical circuit. Energy moves back and forth between the capacitor's electric field and the coil's magnetic field, producing a high-frequency electrical oscillation.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>03 —🔄 Resonance</h3>
+
+                    <p>
+                        Resonance is the phenomenon that allows a Tesla Coil to build up a very large voltage from a relatively smaller input. It occurs when the electrical oscillations in the primary circuit are tuned to the natural resonant frequency of the secondary circuit.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>04 —⚡ High Voltage</h3>
+
+                    <p>
+                       As energy accumulates in the secondary resonant circuit, a very high voltage develops at the top of the secondary coil. The top load helps store charge and shape the electric field.
+
+When the electric field becomes strong enough, it can ionize the surrounding air, producing the characteristic glowing streamers and sparks.
+
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+
+        <section id="applications">
+
+            <h2>🌐 Applications</h2>
+
+            <p>
+
+                ⚡ Wireless Power: Demonstrates the principles of wireless energy transfer.
+
+📡 High-Frequency Research: Used to study high-frequency electrical phenomena.
+
+🔬 Science Education: Demonstrates resonance, electromagnetic induction, and high voltage.
+
+🧪 Laboratory Experiments: Used for controlled high-voltage and electrical discharge experiments.
+
+🎭 Exhibitions & Displays: Creates spectacular electrical sparks for science demonstrations.
+
+            </p>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section>
+
+            <h2>💡 Conclusion</h2>
+
+            <p>
+
+                The Tesla Coil is a fascinating demonstration of electromagnetic induction, oscillation, and resonance. By transferring energy between tuned circuits, it can produce extremely high voltages and visible electrical discharges.
+
+This project by us ( Yash Vardhan Singh and Saksham Prakash ) shows how fundamental principles of physics can combine to create one of the most spectacular demonstrations in electrical science.
+
+“Where resonance turns electrical energy into a visible phenomenon.”
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            <strong>⚡ Tesla Coil Science Exhibition ⚡</strong>
+        </p>
+
+        <p>
+            Designed for Science & Innovation
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
